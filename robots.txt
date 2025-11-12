@@ -1,0 +1,48 @@
+# Robots.txt for Saki-Doruma Landing Page
+# Saki-Doruma - Professional Expense Management Software
+# Owner: Chisom Life Eke
+# Company: Quick Red Tech
+
+# Allow all bots to crawl all content
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.json
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://saki-doruma.quickredtech.com/sitemap.xml
+Sitemap: https://quickredtech.com/saki-doruma/sitemap.xml
+
+# Crawl delay for all other bots
+Request-rate: 1/10s

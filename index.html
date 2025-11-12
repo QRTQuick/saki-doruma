@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saki-Doruma: Professional Expense Management Software. Streamline your finances with advanced analytics, accounting tools, and real-time insights.">
+    <meta name="keywords" content="expense management, accounting software, financial analytics, business tools">
+    <meta name="author" content="Saki-Doruma Team">
+    <title>Saki-Doruma | Professional Expense Management Software</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Notification -->
+    <div id="welcome-notification" class="welcome-notification">
+        <div class="notification-content">
+            <span class="notification-icon">👋</span>
+            <div class="notification-text">
+                <h3>Welcome to Saki-Doruma!</h3>
+                <p>Professional expense management software. 100% Free. No payments. No subscriptions.</p>
+            </div>
+            <button class="notification-close" onclick="this.parentElement.parentElement.style.display='none'">&times;</button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">💼</span>
+                <span class="logo-text">Saki-Doruma</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Take Control of Your Finances</h1>
+            <p class="hero-subtitle">Powerful expense management software built for professionals who demand accuracy, speed, and insight.</p>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">50,000+</span>
+                    <span class="stat-label">Downloads</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Free Forever</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">99.9%</span>
+                    <span class="stat-label">Uptime SLA</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="feature-box">
+                <div class="feature-badge">Real-time Analytics</div>
+                <div class="feature-chart">
+                    <div class="chart-bar" style="height: 40%;"></div>
+                    <div class="chart-bar" style="height: 60%;"></div>
+                    <div class="chart-bar" style="height: 80%;"></div>
+                    <div class="chart-bar" style="height: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Everything you need to manage expenses efficiently</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>Complete Expense Tracking</h3>
+                    <p>Add, edit, and delete expenses with full details. Organize by 11+ categories, track 6 payment methods, mark items as reimbursable, and add notes instantly.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🧮</div>
+                    <h3>10 Professional Calculators</h3>
+                    <p>VAT Calculator, Tax Calculator, Discount Calculator, Markup Calculator, Profit Margin, Break-Even Analysis, Simple & Compound Interest, and Expression Evaluator.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Advanced Analytics Dashboard</h3>
+                    <p>Real-time statistics including total expenses, transaction count, averages, medians, daily spending, and comprehensive category/payment method breakdowns.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>Smart Search & Filter</h3>
+                    <p>Real-time full-text search, category filters, payment method filters, date range queries, and amount range filters. Find anything instantly.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>Monthly Trend Analysis</h3>
+                    <p>Track spending patterns over time, view top 10 expenses, analyze category distribution, and identify expense trends for better financial planning.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">�</div>
+                    <h3>Export to CSV & Reports</h3>
+                    <p>Export expense data to CSV for spreadsheets and generate professional text reports with complete analytics, summaries, and timestamps.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Local Data Storage</h3>
+                    <p>All your financial data is stored locally in JSON format. Your data stays on your computer - no cloud dependency, complete privacy and control.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Professional Dark Theme</h3>
+                    <p>Modern, easy-on-the-eyes dark interface with green accents. Tabbed navigation for Expenses, Calculator, and Analytics with intuitive widgets and cards.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast & Responsive</h3>
+                    <p>Instant calculations, real-time filtering, quick data sorting, and responsive table widgets. Built with PySide6 for optimal performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Saki-Doruma?</h2>
+            
+            <div class="benefits-content">
+                <div class="benefit-item">
+                    <div class="benefit-number">1</div>
+                    <h3>Time Savings</h3>
+                    <p>Automate repetitive expense tracking and reporting. Spend less time on administration, more on strategy.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-number">2</div>
+                    <h3>Accuracy & Compliance</h3>
+                    <p>Eliminate manual errors with professional-grade calculations. Stay compliant with accounting standards.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-number">3</div>
+                    <h3>No Cost, No Limits</h3>
+                    <p>Free forever with no subscriptions, no licenses to manage, no hidden fees. Get everything without paying a dime.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-number">4</div>
+                    <h3>Full Control</h3>
+                    <p>Your data stays yours. No vendor lock-in, no cloud dependency. Complete privacy and security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Software Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">100% Free Forever</h2>
+            <p class="section-subtitle" style="background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: 700; font-size: 1.3rem;">Professional expense management software at absolutely no cost</p>
+            
+            <div class="security-banner">
+                <span class="security-icon">🎉</span>
+                <p><strong style="font-size: 1.15rem; color: #00ff99;">Saki-Doruma is 100% FREE software for life!</strong> <span style="color: rgba(255, 255, 255, 0.95); font-weight: 500; display: block; margin-top: 0.5rem;">No payments ever, no subscriptions, no hidden fees, no premium features. Everything is free. Your financial data is encrypted and protected locally on your computer.</span> <span style="color: rgba(255, 255, 255, 0.95); font-weight: 500; display: block; margin-top: 0.5rem;">Questions? Email <a href="mailto:quickredtech@gmail.com" style="color: #00ff99; font-weight: 700; text-decoration: none; border-bottom: 2px solid #00ff99; transition: all 0.3s ease;">quickredtech@gmail.com</a></span></p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card featured">
+                    <div class="badge">All Features Included</div>
+                    <h3>Saki-Doruma</h3>
+                    <div class="price">FREE</div>
+                    <p class="price-period">Forever free</p>
+                    <ul class="pricing-features">
+                        <li>✓ Unlimited expense tracking</li>
+                        <li>✓ 11+ expense categories</li>
+                        <li>✓ 10+ accounting calculators</li>
+                        <li>✓ Advanced analytics dashboard</li>
+                        <li>✓ Smart search & filtering</li>
+                        <li>✓ Monthly trend analysis</li>
+                        <li>✓ Export to CSV & reports</li>
+                        <li>✓ Local data storage (your data, your control)</li>
+                        <li>✓ Professional dark theme</li>
+                        <li>✓ Fast & responsive</li>
+                        <li>✓ Email support</li>
+                    </ul>
+                    <button class="btn btn-primary" onclick="alert('Download coming soon! Check back for the Windows executable.')">Download Now - FREE</button>
+                    <p class="payment-note">No registration required. No email needed. No costs ever. Completely free.</p>
+                </div>
+            </div>
+
+            <div class="pricing-faq">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-item">
+                    <h4>Is it really free?</h4>
+                    <p>Yes! Saki-Doruma is 100% free, open-source software. No payments, subscriptions, or hidden costs ever.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there any catch?</h4>
+                    <p>No catch! We believe in providing powerful tools without paywalls. Use it for personal or business purposes freely.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I get support?</h4>
+                    <p>Email us at quickredtech@gmail.com with any questions or feature requests. We're happy to help!</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I use it commercially?</h4>
+                    <p>Absolutely! Use Saki-Doruma for personal or business purposes. No restrictions on commercial use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2 class="cta-title">Ready to Manage Your Expenses?</h2>
+            <p class="cta-subtitle">Download Saki-Doruma free and start tracking your expenses today. No registration, no payment, no limits.</p>
+            
+            <div class="cta-form">
+                    <a href="https://raw.githubusercontent.com/QRTQuick/saki-doruma/main/dist/saki-doruma/saki-doruma.exe" download="saki-doruma.exe" class="btn btn-primary">Download for Windows</a>
+                    <a href="https://github.com/QRTQuick/saki-doruma/archive/refs/heads/main.zip" download class="btn btn-secondary">Get Full Source Code</a>
+            </div>
+            
+            <p class="cta-note">100% Free. No subscriptions. No ads. No tracking.</p>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="coming-soon" id="coming-soon">
+        <div class="container">
+            <h2 class="section-title">Coming Soon Features</h2>
+            <p class="section-subtitle">Exciting new features in development to make Saki-Doruma even more powerful</p>
+            
+            <div class="coming-soon-grid">
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q1 2026</div>
+                    <div class="feature-icon">📱</div>
+                    <h3>Mobile App</h3>
+                    <p>Native iOS and Android mobile apps to track expenses on the go. Full sync with desktop version.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 45%"></div>
+                    </div>
+                    <span class="progress-text">45% Complete</span>
+                </div>
+                
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q1 2026</div>
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud Sync</h3>
+                    <p>Optional cloud backup and synchronization across all your devices. End-to-end encrypted storage.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 30%"></div>
+                    </div>
+                    <span class="progress-text">30% Complete</span>
+                </div>
+                
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q2 2026</div>
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-Powered Insights</h3>
+                    <p>Smart categorization, spending predictions, and personalized financial recommendations based on your patterns.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 20%"></div>
+                    </div>
+                    <span class="progress-text">20% Complete</span>
+                </div>
+                
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q2 2026</div>
+                    <div class="feature-icon">👥</div>
+                    <h3>Team Collaboration</h3>
+                    <p>Share expense tracking with team members. Role-based permissions, approval workflows, and audit logs.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 15%"></div>
+                    </div>
+                    <span class="progress-text">15% Complete</span>
+                </div>
+                
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q3 2026</div>
+                    <div class="feature-icon">🧾</div>
+                    <h3>Receipt OCR</h3>
+                    <p>Scan receipts with your camera. Automatic extraction of amounts, dates, and merchant information.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 10%"></div>
+                    </div>
+                    <span class="progress-text">10% Complete</span>
+                </div>
+                
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q3 2026</div>
+                    <div class="feature-icon">🌍</div>
+                    <h3>Multi-Currency Support</h3>
+                    <p>Track expenses in multiple currencies with real-time exchange rates. Automatic conversion and reporting.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 25%"></div>
+                    </div>
+                    <span class="progress-text">25% Complete</span>
+                </div>
+
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q4 2026</div>
+                    <div class="feature-icon">📊</div>
+                    <h3>Advanced Dashboard</h3>
+                    <p>Customizable widgets, real-time charts, comparative analysis, and business intelligence reports.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 35%"></div>
+                    </div>
+                    <span class="progress-text">35% Complete</span>
+                </div>
+                
+                <div class="coming-soon-card">
+                    <div class="coming-soon-badge">Q4 2026</div>
+                    <div class="feature-icon">⚙️</div>
+                    <h3>API & Integrations</h3>
+                    <p>Public REST API for custom integrations. Connect with accounting software, banking platforms, and tools.</p>
+                    <div class="status-bar">
+                        <div class="progress" style="width: 5%"></div>
+                    </div>
+                    <span class="progress-text">5% Complete</span>
+                </div>
+            </div>
+
+            <div class="coming-soon-notice">
+                <h3>Want to Stay Updated?</h3>
+                <p>Follow our development progress on GitHub and star the repository to get notified about new releases.</p>
+                <div class="cta-form" style="max-width: 500px; margin: 1.5rem auto 0;">
+                    <button class="btn btn-primary" onclick="alert('GitHub repository coming soon!')">View on GitHub</button>
+                    <button class="btn btn-secondary" onclick="alert('Newsletter signup coming soon!')">Subscribe to Updates</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Saki-Doruma</h4>
+                    <p>Professional expense management software for modern businesses.</p>
+                    <p class="footer-owner"><strong>Owner:</strong> Chisom Life Eke</p>
+                    <p class="footer-company"><strong>Company:</strong> Quick Red Tech</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="mailto:quickredtech@gmail.com">Contact</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Download & Install</h4>
+                    <div class="download-instructions">
+                        <p class="download-title">Quick Start Guide:</p>
+                        <ol class="download-steps">
+                            <li><strong>Download</strong> the Windows Executable (.exe file)</li>
+                            <li><strong>Download</strong> the Dependencies ZIP file</li>
+                            <li><strong>Extract</strong> the ZIP to the same folder as the .exe</li>
+                            <li><strong>Run</strong> saki-doruma.exe - it will work!</li>
+                        </ol>
+                        <p class="download-note">✓ Both files must be in the same directory to work properly</p>
+                        <div class="download-buttons">
+                            <a href="https://raw.githubusercontent.com/QRTQuick/saki-doruma/main/dist/saki-doruma/saki-doruma.exe" download="saki-doruma.exe" class="download-link exe">📥 Download .EXE</a>
+                            <a href="https://github.com/QRTQuick/saki-doruma/archive/refs/heads/main.zip" download class="download-link zip">📦 Download Dependencies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Saki-Doruma by <strong>Quick Red Tech</strong> | Owner: <strong>Chisom Life Eke</strong> | All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
