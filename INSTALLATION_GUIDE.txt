@@ -1,0 +1,397 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                    SAKI-DORUMA INSTALLATION GUIDE                            ║
+║                     Professional Expense Manager v1.0.0                       ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+📋 TABLE OF CONTENTS
+═══════════════════
+
+1. System Requirements
+2. Installation Steps
+3. Running the Application
+4. First-Time Setup
+5. Troubleshooting
+6. Quick Reference
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🖥️ SYSTEM REQUIREMENTS
+══════════════════════
+
+MINIMUM REQUIREMENTS:
+- Windows 10 or later / macOS 10.13+ / Linux (Ubuntu 20.04+)
+- Python 3.9 or higher
+- 50 MB disk space
+- 200 MB available RAM
+- Internet connection (for pip installation)
+
+RECOMMENDED:
+- Windows 11 / macOS 12+ / Linux Ubuntu 22.04+
+- Python 3.10 or higher
+- 100 MB disk space
+- 512 MB available RAM
+- SSD for faster performance
+
+HOW TO CHECK PYTHON VERSION:
+Open Command Prompt (Windows) or Terminal (Mac/Linux) and type:
+python --version
+
+If you have Python 3.9+, you're ready to proceed!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📥 INSTALLATION STEPS
+═════════════════════
+
+STEP 1: Download/Extract Project
+─────────────────────────────────
+
+If you haven't already:
+1. Extract the saki-doruma folder to your desired location
+2. On Windows: C:\Users\YourName\Documents\saki-doruma (example)
+3. On Mac: ~/Documents/saki-doruma
+4. On Linux: ~/saki-doruma
+
+STEP 2: Open Terminal/Command Prompt
+────────────────────────────────────
+
+WINDOWS:
+1. Press Win + R
+2. Type: cmd
+3. Press Enter
+
+MAC:
+1. Open Finder
+2. Go to Applications → Utilities → Terminal
+
+LINUX:
+1. Open Terminal (Ctrl + Alt + T usually)
+
+STEP 3: Navigate to Project Directory
+──────────────────────────────────────
+
+Type the following (replace path with your location):
+
+WINDOWS:
+cd C:\Users\DELL\OneDrive\Pictures\saki-doruma
+
+MAC:
+cd ~/Documents/saki-doruma
+
+LINUX:
+cd ~/saki-doruma
+
+STEP 4: Install Dependencies
+─────────────────────────────
+
+Type this command and press Enter:
+pip install -r requirements.txt
+
+This will install PySide6 (the main dependency).
+
+Wait for it to complete (may take 1-5 minutes).
+
+SUCCESS INDICATOR:
+You should see: "Successfully installed PySide6-6.7.0" or similar
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🚀 RUNNING THE APPLICATION
+═══════════════════════════
+
+LAUNCHING SAKI-DORUMA:
+
+From the terminal (same directory as above), type:
+python main.py
+
+Then press Enter.
+
+EXPECTED RESULT:
+- Application window opens in 1-2 seconds
+- Professional dark theme interface appears
+- Three tabs visible: Expenses, Calculator, Analytics
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✨ FIRST-TIME SETUP
+═══════════════════
+
+When you first run saki-doruma:
+
+1. APPLICATION INITIALIZATION
+   - The app creates a data/storage/ folder automatically
+   - Creates expenses.json file
+   - Creates reports.json file
+   - Everything is ready to use
+
+2. ADD YOUR FIRST EXPENSE
+   - Click the "Expenses" tab (default tab)
+   - Click "+ Add Expense" button
+   - Fill in the form:
+     * Description: "Test Expense"
+     * Amount: 100.00
+     * Category: "Other"
+     * Payment Method: "Cash"
+     * Date: Today
+   - Click "Add Expense"
+
+3. VERIFY INSTALLATION
+   - The expense appears in the table
+   - Statistics update (Total: $100.00, Count: 1, Average: $100.00)
+   - Data is automatically saved
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔧 TROUBLESHOOTING
+══════════════════
+
+PROBLEM: "ModuleNotFoundError: No module named 'PySide6'"
+CAUSE: PySide6 not installed
+SOLUTION:
+1. Open terminal in project folder
+2. Run: pip install PySide6
+3. Run: python main.py
+
+PROBLEM: "Python is not recognized as an internal or external command"
+CAUSE: Python not in system PATH
+SOLUTION (Windows):
+1. Reinstall Python
+2. During installation, CHECK "Add Python to PATH"
+3. Restart computer
+4. Try again
+
+SOLUTION (Mac/Linux):
+1. Use python3 instead of python
+2. Try: python3 main.py
+
+PROBLEM: "Permission denied" or "Access is denied"
+CAUSE: No write permissions
+SOLUTION (Windows):
+1. Right-click Command Prompt
+2. Select "Run as administrator"
+3. Navigate to folder and try again
+
+SOLUTION (Mac/Linux):
+1. Use: sudo python main.py
+2. Enter your password
+
+PROBLEM: Application starts but seems slow
+CAUSE: Computer resources
+SOLUTION:
+1. Close other applications
+2. Restart computer
+3. Clear temporary files
+
+PROBLEM: "No such file or directory"
+CAUSE: Wrong folder path
+SOLUTION:
+1. Make sure you're in the saki-doruma folder
+2. Check: ls (Mac/Linux) or dir (Windows)
+3. You should see: main.py, config.py, data/, modules/, ui/
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎯 VERIFICATION CHECKLIST
+═════════════════════════
+
+After installation, verify:
+
+☐ Python 3.9+ installed (python --version)
+☐ PySide6 installed (pip list | grep PySide6)
+☐ In project directory (ls or dir shows main.py)
+☐ Application launches (python main.py)
+☐ Can add expense
+☐ Statistics update
+☐ Data is saved
+☐ Calculator works
+☐ Analytics display
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💡 QUICK REFERENCE
+═══════════════════
+
+COMMON COMMANDS:
+
+Check Python version:
+python --version
+
+Install dependencies:
+pip install -r requirements.txt
+
+Run application:
+python main.py
+
+Update PySide6:
+pip install --upgrade PySide6
+
+List installed packages:
+pip list
+
+Create virtual environment (optional):
+python -m venv venv
+
+Activate virtual environment:
+WINDOWS: venv\Scripts\activate
+MAC/LINUX: source venv/bin/activate
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📁 PROJECT STRUCTURE AFTER INSTALLATION
+════════════════════════════════════════
+
+saki-doruma/
+├── main.py                              ← Run this to start
+├── config.py
+├── requirements.txt
+├── README_FIRST.txt                     ← Read this
+├── data/
+│   ├── models.py
+│   ├── database.py
+│   └── storage/                         ← Created automatically
+│       ├── expenses.json
+│       └── reports.json
+├── modules/
+│   ├── calculator.py
+│   ├── expense_manager.py
+│   └── analytics.py
+└── ui/
+    ├── stylesheet.py
+    ├── widgets.py
+    ├── main_window.py
+    ├── expense_tab.py
+    ├── calculator_tab.py
+    └── analytics_tab.py
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎓 NEXT STEPS AFTER INSTALLATION
+═════════════════════════════════
+
+1. READ DOCUMENTATION
+   - Start with: README_FIRST.txt
+   - Then read: QUICKSTART.md
+   - Detailed guide: README.md
+
+2. EXPLORE APPLICATION
+   - Add some test expenses
+   - Try the calculator tools
+   - Review the analytics tab
+
+3. LEARN FEATURES
+   - Read: EXAMPLES.md for practical examples
+   - Review: FEATURES.txt for complete feature list
+
+4. USE REGULARLY
+   - Add real expenses
+   - Monitor analytics
+   - Export reports
+
+═══════════════════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTATION FILES
+══════════════════════
+
+Quick Start:
+- README_FIRST.txt           (overview)
+- START_HERE.txt             (getting started)
+- QUICKSTART.md              (setup guide)
+
+Detailed Docs:
+- README.md                  (complete guide)
+- EXAMPLES.md                (15 examples)
+- ARCHITECTURE.md            (technical)
+- FEATURES.txt               (features list)
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🔐 SECURITY NOTE
+════════════════
+
+Current version stores data in plain JSON files locally.
+This is suitable for internal business use on secure computers.
+
+For maximum security:
+- Keep computer password protected
+- Regular backups
+- Encryption of backup files
+- Restricted folder access
+
+═══════════════════════════════════════════════════════════════════════════════
+
+💾 DATA BACKUP
+═══════════════
+
+Important: Back up your data regularly!
+
+To backup:
+1. Copy the data/storage/ folder
+2. Save to external drive or cloud storage
+3. Do this weekly or after major entries
+
+Recommended backup locations:
+- External USB drive
+- OneDrive (Windows)
+- Google Drive
+- iCloud (Mac)
+- Dropbox
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🆘 GETTING HELP
+════════════════
+
+1. Check the documentation files
+   - README.md has most answers
+   - EXAMPLES.md shows how to use
+
+2. Review ARCHITECTURE.md
+   - Technical details
+   - Code structure
+
+3. Try QUICKSTART.md
+   - Common issues
+   - Troubleshooting section
+
+4. Run with debugging (advanced):
+   python -u main.py
+
+═══════════════════════════════════════════════════════════════════════════════
+
+✅ SUCCESS CHECKLIST
+═════════════════════
+
+✓ Python 3.9+ installed
+✓ PySide6 installed via pip
+✓ Project extracted to folder
+✓ Ran: pip install -r requirements.txt
+✓ Ran: python main.py
+✓ Application window opened
+✓ Added test expense
+✓ Data was saved
+✓ Ready to use!
+
+═══════════════════════════════════════════════════════════════════════════════
+
+🎉 INSTALLATION COMPLETE!
+═════════════════════════
+
+Your saki-doruma application is ready to use!
+
+QUICK START:
+1. Open terminal in project folder
+2. Run: python main.py
+3. Start managing expenses!
+
+For detailed usage, see README_FIRST.txt or README.md
+
+═══════════════════════════════════════════════════════════════════════════════
+
+Questions? Check the documentation files included in the project!
+
+Version: 1.0.0
+Status: Ready to Use ✓
+
+═══════════════════════════════════════════════════════════════════════════════
