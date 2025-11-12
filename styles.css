@@ -55,6 +55,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    color: red;
 }
 
 /* Typography */
@@ -383,7 +384,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Benefits Section */
 .benefits {
     padding: 6rem 0;
-    background: linear-gradient(135deg, var(--primary-light) 0%, transparent 100%);
+    background: linear-gradient(15deg, var(--primary-light) 9%, transparent 200%);
 }
 
 .benefits-content {
@@ -592,8 +593,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Footer */
 .footer {
-    background: var(--text-dark);
-    color: white;
+    background: blue;
+    
+    color: rgb(224, 24, 24);
     padding: 3rem 0 1rem;
 }
 
@@ -721,7 +723,68 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem;
     }
 }
+* Footer */
+.footer {
+    background: blue;
+    
+    color: rgb(224, 24, 24);
+    padding: 3rem 0 1rem;
+}
 
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h4 {
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.footer-section p {
+    color: var(--primary-light);
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: var(--primary-light);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.footer-section ul li a:hover {
+    color: var(--secondary);
+}
+
+.footer-section a {
+    color: #dddddd;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+    color: #999999;
+}
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -782,7 +845,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(237, 6, 6, 0.5);
     animation: fadeIn 0.3s ease;
 }
 
@@ -946,7 +1009,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Security & Payment Styles */
 .security-banner {
-    background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+    background: linear-gradient(135deg, #3903b6 0%, #f1f8e9 100%);
     border-left: 4px solid var(--success);
     padding: 1.5rem;
     border-radius: 8px;
